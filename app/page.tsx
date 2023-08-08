@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <MyProfilePic />
-      <h1>Velkommen 👋&nbsp; til min blog!</h1>
+      <h1>Velkommen 👋&nbsp; til min nye tirsdags-blog!</h1>
       <Posts />
     </div>
   )
