@@ -3,7 +3,7 @@ import MyProfilePic from './components/MyProfilePic'
 import { FaLaptop } from "react-icons/fa"
 import Link from 'next/link'
 
-export const revalidate = 10
+export const revalidate = 86400
 
 
 
