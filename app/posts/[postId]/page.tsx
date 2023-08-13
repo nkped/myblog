@@ -9,7 +9,7 @@ import 'highlight.js/styles/github-dark.css'
 
 //act as ssr for dev purposes
 
-export const revalidate = 10
+export const revalidate = 86400
 
 
 
