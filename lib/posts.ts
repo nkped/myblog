@@ -1,9 +1,10 @@
 import { compileMDX } from 'next-mdx-remote/rsc'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings/lib'
-import rehypeHighlight from 'rehype-highlight/lib'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeHighlight from 'rehype-highlight'
 import rehypeSlug from 'rehype-slug'
 import Video from '@/app/components/Video'
 import CustomImage from '@/app/components/CustomImage'
+
 
 type Filetree = {
     "tree": [
@@ -44,10 +45,10 @@ export async function getPostByName(fileName: string): Promise<BlogPost | undefi
             parseFrontmatter: true,
             mdxOptions: {
                 rehypePlugins: [
-                    rehypeHighlight, 
-                    rehypeSlug,
-                    [rehypeAutolinkHeadings, 
-                    {behavior: 'wrap'}]
+                    rehypeHighlight as any,
+                    rehypeSlug as any,
+                    [rehypeAutolinkHeadings as any,
+                    { behavior: 'wrap' }]
                 ]
             }
         }
