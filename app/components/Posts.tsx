@@ -10,8 +10,9 @@ export default async function Posts() {
   }
 
   return (
-      <section className="mt-6 mx-auto max-w-2xl">
-          <h2 className="text-4xl font-bold dark:text-white/90">Blog</h2>
+      <section className="py-10 mx-auto max-w-2xl">
+          <div className='mb-8 pb-5 border-b-2 border-solid border-white/20'>
+          <h2 className="text-3xl font-bold dark:text-white/80 ">Blog - nkped</h2></div>
           <ul className="w-full list-none p-0">
               {posts.map(post => (
                   <ListItem key={post.id} post={post} />
